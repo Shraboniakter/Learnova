@@ -1,19 +1,7 @@
-
-import 'package:flutter/material.dart';
-import 'package:untitled3/Screen/LoginScreen.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:untitled3/app.dart';
 
 void main(){
-  runApp(app());
-}
-
-class app extends StatelessWidget {
-  const app({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Loginscreen(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(App());
 }
